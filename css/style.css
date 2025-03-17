@@ -1,4 +1,8 @@
 /* Base Styles */
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --primary-color: #000;
     --secondary-color: #fff;
@@ -117,6 +121,9 @@ nav {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 1s ease forwards;
+    max-width: 90%;
+    margin: 0 auto;
+
 }
 
 .profile-photo {
@@ -285,13 +292,13 @@ nav {
 }
 
 .cert-icon {
-    width: 450px;
-    height: 450px;
     margin: 0 auto 1.5rem;
     background: var(--accent-color);
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
+    height: auto;
 }
 
 .cert-icon i {
@@ -467,7 +474,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     
     .hamburger {
