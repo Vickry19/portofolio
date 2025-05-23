@@ -27,6 +27,7 @@ function toggleMenu() {
 
 hamburger.addEventListener('click', toggleMenu);
 
+
 // Navbar scroll effect
 const nav = document.querySelector('nav');
 let lastScroll = 0;
